@@ -8,13 +8,13 @@ import { Feed } from './Feed'
 export const FeedController = ({ navigation }: FeedProps) => {
   const getArticleDetail = (params: DetailRouteParams) => navigation.navigate('Detail', params)
 
-  const { data: articles } = useQuery({
+  const { data: articles, isLoading } = useQuery({
     queryKey: ['getArticles'],
     queryFn: async () => {
-      const unsortedArticles = await container.resolve('getArticles')
+      const unsortedArticles = await container.resolve('getArticles')()
       return sortArticles(unsortedArticles)
     },
   })
 
-  return <Feed articles={articles ?? []} onArticlePress={getArticleDetail} />
+  return <Feed articles={articles ?? []} isLoading={isLoading} onArticlePress={getArticleDetail} />
 }

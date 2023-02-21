@@ -1,16 +1,16 @@
 import { getArbitraryDate, cloneDeep } from '../../utils'
 import { Article } from './Article'
-
-const lorem =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus condimentum eros non porttitor. Nullam lobortis eros sit amet lorem ullamcorper convallis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla laoreet auctor elit sit amet suscipit. Mauris ut leo libero. Vestibulum vulputate odio sed arcu vulputate, sit amet ornare leo vestibulum. Etiam leo nisl, posuere non magna ac, euismod volutpat ipsum. Aliquam vestibulum varius purus, sed faucibus diam elementum non. Praesent consectetur nec nibh quis auctor. Nulla convallis lectus tortor, in viverra lectus consectetur sed. Nullam non condimentum turpis. Ut in turpis in mi sagittis luctus. Mauris accumsan ornare nisl, in maximus lorem convallis vel. Vestibulum turpis mi, auctor vitae augue ac, congue feugiat orci. Mauris scelerisque turpis vitae egestas ultricies. Vivamus leo sapien, egestas quis aliquam sit amet, tincidunt a eros.'
+import { setOfArticles } from './__fixtures__/SetOfArticles'
 
 const articleTemplate: Article = {
-  id: 'id_1',
-  date: new Date(),
+  id: 'id_001',
+  date: new Date('Wed Jan 11 2023 16:56:13 GMT+0100 (Central European Standard Time)'),
   image: 'path/to/image',
-  title: 'Fake article title',
-  description: lorem,
-  url: 'https://www.fakeUrl.com/fakeArticle',
+  title:
+    'Prince Harry And Meghan Markle Considered Which Dog Was Most In Need When They Adopted A Beagle, The Rescue Group’s Founder Said',
+  description:
+    '<h1>The couple adopted a 7-year-old beagle named Mamma Mia, who was rescued from a facility that breeds dogs for biomedical research.</h1><p><img src="https://img.buzzfeed.com/buzzfeed-static/static/2022-08/26/14/campaign_images/60087012f37e/prince-harry-and-meghan-markle-considered-which-d-2-1642-1661523756-2_dblbig.jpg" /></p><hr /><p><a href="https://www.buzzfeednews.com/article/ellievhall/prince-harry-meghan-markle-dog-beagle">View Entire Post &rsaquo;</a></p>',
+  url: 'https://www.buzzfeednews.com/article/ellievhall/prince-harry-meghan-markle-dog-beagle',
 }
 
 export const anArticle = (options?: Partial<Article>): Article => ({
@@ -20,14 +20,7 @@ export const anArticle = (options?: Partial<Article>): Article => ({
   ...options,
 })
 
-export const aSetOfArticles = (size = 6) => {
-  const set = []
-
-  for (let c = 0; c < size; c++) {
-    set.push(anArticle())
-  }
-  return set
-}
+export const aSetOfArticles = (size = 6) => setOfArticles.slice(0, size)
 
 export const sortArticles = (articles: Article[]) => {
   const articlesClone = cloneDeep(articles)
