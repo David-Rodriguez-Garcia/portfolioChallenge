@@ -13,16 +13,18 @@ export const ArticleRepository = {
   parseArticles: (response: Response): Promise<Article[]> =>
     response
       .text()
-      .then((text) => new parser.XMLParser().parse(text))
+      .then((text) => new parser.XMLParser({ ignoreAttributes: false }).parse(text))
       .then((json) => json.rss.channel.item)
       .then((items) =>
         items.map((article: FetchedArticle) => ({
           title: article.title,
           description: article.description,
-          id: article.guid,
+          id: article.guid['#text'],
           date: new Date(article.pubDate),
           url: article.link,
-          image: article['media:thumbnail'],
+          image:
+            article['media:thumbnail']['@_url'] ||
+            'https://www.buzzfeed.com/obiwan-static/images/about/press-assets/BuzzFeed_Gradient.png',
         }))
       ),
 }
@@ -32,8 +34,14 @@ type FetchedArticle = {
   description: string
   link: string
   pubDate: string
-  guid: string
+  guid: { '#text': string; '@_isPermaLink': boolean }
   category: string
-  'media:thumbnail': string
-  'dc:creator': string
+  'media:thumbnail': {
+    '@_xmlns:media': string
+    '@_url': string
+  }
+  'dc:creator': {
+    '#text': string
+    '@_xmlns:dc': string
+  }
 }
