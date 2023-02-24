@@ -1,16 +1,19 @@
 import { ReactNode } from 'react'
 import { View } from 'react-native'
 
-import { PositionType, toContent } from '../../_styles/Position'
+import { JustifyKeys, toJustify, AlignKeys, toAlign } from '../../_styles/Position'
 
 type Props = {
   children: ReactNode
-  vertical?: PositionType
+  horizontal?: AlignKeys
+  vertical?: JustifyKeys
   testID?: string
 }
 
-export const Box = ({ children, vertical = 'start', testID }: Props) => (
-  <View style={[{ flex: 1 }, { justifyContent: toContent(vertical) }]} testID={testID}>
+export const Box = ({ children, horizontal = 'start', vertical = 'start', testID }: Props) => (
+  <View
+    style={{ flex: 1, justifyContent: toJustify(vertical), alignItems: toAlign(horizontal) }}
+    testID={testID}>
     {children}
   </View>
 )

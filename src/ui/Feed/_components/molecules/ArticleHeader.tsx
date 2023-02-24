@@ -7,7 +7,7 @@ type Props = {
 }
 
 export const ArticleHeader = ({ title, date }: Props) => (
-  <Row vertical="spaceBetween">
+  <Row horizontal="spaceBetween">
     <Text bold="strong">{title}</Text>
     <Text bold="strong">{date.toLocaleDateString()}</Text>
   </Row>
