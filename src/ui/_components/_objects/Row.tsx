@@ -10,6 +10,13 @@ type Props = {
 
 export const Row = ({ children, horizontal = 'start' }: Props) => {
   return (
-    <View style={{ flexDirection: 'row', justifyContent: toJustify(horizontal) }}>{children}</View>
+    <View
+      style={{
+        flexDirection: 'row',
+        justifyContent: toJustify(horizontal),
+        width: '100%',
+      }}>
+      {children}
+    </View>
   )
 }
