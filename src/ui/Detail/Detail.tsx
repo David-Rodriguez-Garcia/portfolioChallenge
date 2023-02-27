@@ -11,12 +11,8 @@ type Props = {
 }
 
 export const Detail = ({ title, description, image, onPress }: Props) => (
-  <Box vertical="spaceAround" testID="detailScreen">
-    <Image
-      style={{ height: 100, width: 100, alignSelf: 'center' }}
-      source={{ uri: image }}
-      testID="articleImage"
-    />
+  <Box horizontal="center" vertical="spaceAround" testID="detailScreen">
+    <Image style={{ height: 100, width: 100 }} source={{ uri: image }} testID="articleImage" />
     <Text bold="strong" size="big" center>
       {title}
     </Text>

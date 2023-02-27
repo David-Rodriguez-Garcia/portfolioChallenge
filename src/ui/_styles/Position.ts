@@ -1,11 +1,18 @@
-export enum Position {
+export enum Justify {
   start = 'flex-start',
-  center = 'center',
-  end = 'flex-end',
   spaceAround = 'space-around',
   spaceBetween = 'space-between',
 }
 
-export type PositionType = keyof typeof Position
+export type JustifyKeys = keyof typeof Justify
 
-export const toContent = (type: PositionType) => Position[type]
+export const toJustify = (type: JustifyKeys) => Justify[type]
+
+export enum Align {
+  start = 'flex-start',
+  center = 'center',
+}
+
+export type AlignKeys = keyof typeof Align
+
+export const toAlign = (type: AlignKeys) => Align[type]
