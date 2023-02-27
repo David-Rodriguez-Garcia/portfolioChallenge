@@ -6,22 +6,12 @@
 [![Issues][issues-shield]][issues-url]
 
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
 <h3 align="center">Portfolio Challenge</h3>
 
   <p align="center">
-    This is a challenge sent by an anonymous company for me to do in order to show the knowledge obtained in my previous position as a react and react native developer.
-    <br />
-    <a href="https://github.com/david-rodriguez-garcia/portfolioChallenge"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/david-rodriguez-garcia/portfolioChallenge">View Demo</a>
-    ·
-    <a href="https://github.com/david-rodriguez-garcia/portfolioChallenge/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/david-rodriguez-garcia/portfolioChallenge/issues">Request Feature</a>
+    This is a challenge sent by an anonymous company in order to show the knowledge I obtained in my previous position as a react and react native developer.
   </p>
 </div>
 
@@ -33,18 +23,19 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-            <ul>
-        <li><a href="#purpose">Purpose</a></li>
-        <li><a href="#objective">Objective</a></li>
-      </ul>
     </li>
     <li>
       <a href="#key-points">Key points</a>  
       <ul>
-        <li><a href="#architecture">Architecture</a></li>
-        <li><a href="#folder-distribution">Folder distribution</a></li>
+        <li><a href="#architecture">Architecture and design patterns</a></li>
+        <li><a href="#folder-structure">Folder structure</a></li>
+        <li><a href="#testing">Testing</a></li>
+        <ul>
+          <li><a href="#dependency-injection">Dependency injection</a></li>
+        </ul>
+        <li><a href="#libraries">Libraries</a></li>
+        <li><a href="#github">Github</a></li>
         <li><a href="#issues">Issues</a></li>
-        <li><a href="#libraries-used">Libraries used</a></li>
       </ul>
     </li>
     <li>
@@ -63,13 +54,64 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Created with expo.
+The challenge consists of implementing a basic RSS client with the following features:
+- The main screen of the application will be a list of news items sorted by date.
+- Each row will contain the title, a description of no more than two lines and the image of the corresponding news item.
+- Selecting a row should open a screen with the detail of the news item.
+- The detail screen will contain the title, the complete description, the image of the news item and a "View in browser" button.
+- In case of using third-party libraries, briefly justify the reason for each one.
+- The data source is free: any online json feed or dynamic xml.
+- A free repository must be created on Github (https://github.com/) or Bitbucket (https://bitbucket.org/) and make good use of the tool for the development and evolution of the App code.
 
-Six months ago, while I was looking for a position as a React/React Native developer, I was challenged by a company based in Madrid to program an app. The challenge had a set of rules and instructions. 
+Additional points will be given for:
+- Possibility of offline operation: the news should persist in the device so that if when starting the application there is no connectivity the last ones consulted are shown.
+- Ability to search for news by title.
+- Brief description of the design patterns used and the reason behind their use.
+- Add app icons.
+- Testing components.
 
+It will be especially valued:
+- Code correctness: organization of methods and classes, reuse of components, architecture, dependencies, possibility of future scaling.
+- Comments and maintainability of the code.
+
+It is not important:
+- The graphical aspect of the app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Key points
+
+### Architecture and design patterns
+
+#### Hexagonal architecture
+
+#### MVC
+
+#### Atomic design
+
+### Folder structure
+
+![Screenshot from 2023-02-27 15-10-12](https://user-images.githubusercontent.com/71403641/221586687-3ba39dac-c2d5-4279-aa34-80b452abd21a.png)
+
+![Screenshot from 2023-02-27 15-37-18](https://user-images.githubusercontent.com/71403641/221592650-9242c561-69a4-493d-aad2-65890e123a3d.png)
+
+![Screenshot from 2023-02-27 15-39-06](https://user-images.githubusercontent.com/71403641/221593099-25884d35-c7ef-4cad-8374-cc9fd84e9fbd.png)
+
+![Screenshot from 2023-02-27 15-41-57](https://user-images.githubusercontent.com/71403641/221593899-68e6ede6-a798-41db-be1a-bc9460aa9206.png)
+
+
+
+### Testing
+
+#### Dependency Injection
+
+### Libraries
+
+### Github
+
+### Issues
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
