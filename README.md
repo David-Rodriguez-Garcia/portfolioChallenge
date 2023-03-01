@@ -60,7 +60,7 @@ The challenge consists of implementing a basic RSS client with the following fea
 - Selecting a row should open a screen with the detail of the news item.
 - The detail screen will contain the title, the complete description, the image of the news item and a "View in browser" button.
 - In case of using third-party libraries, briefly justify the reason for each one.
-- The data source is free: any online json feed or dynamic xml.
+- The data source is free: any online dynamic xml or json feed.
 - A free repository must be created on Github (https://github.com/) or Bitbucket (https://bitbucket.org/) and make good use of the tool for the development and evolution of the App code.
 
 Additional points will be given for:
