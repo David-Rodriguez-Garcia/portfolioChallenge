@@ -61,7 +61,7 @@ The challenge consists of implementing a basic RSS client with the following fea
 - The detail screen will contain the title, the complete description, the image of the news item and a "View in browser" button.
 - In case of using third-party libraries, briefly justify the reason for each one.
 - The data source is free: any online dynamic xml or json feed.
-- A free repository must be created on Github (https://github.com/) or Bitbucket (https://bitbucket.org/) and make good use of the tool for the development and evolution of the App code.
+- A free repository must be created on Github (https://github.com/) or Bitbucket (https://bitbucket.org/) and a good use of the tool should be made for the development and evolution of the App code.
 
 Additional points will be given for:
 - Possibility of offline operation: the news should persist in the device so that if when starting the application there is no connectivity the last ones consulted are shown.
@@ -99,6 +99,22 @@ It is not important:
 
 ![Screenshot from 2023-02-27 15-41-57](https://user-images.githubusercontent.com/71403641/221593899-68e6ede6-a798-41db-be1a-bc9460aa9206.png)
 
+![Screenshot from 2023-02-27 16-14-43](https://user-images.githubusercontent.com/71403641/222272341-a9a8c4aa-e448-4dd1-8c33-9f8760cf0ead.png)
+![Screenshot from 2023-02-27 16-19-47](https://user-images.githubusercontent.com/71403641/222272348-52a61cc3-a7e6-4230-90c9-ef51358827b3.png)
+![Screenshot from 2023-02-27 16-22-11](https://user-images.githubusercontent.com/71403641/222272350-57f33bab-29a1-49ab-ad96-a9412caec35a.png)
+![Screenshot from 2023-02-27 16-24-49](https://user-images.githubusercontent.com/71403641/222272352-4ce2db65-6752-4b9c-8987-0e8d1d275436.png)
+![Screenshot from 2023-02-27 16-26-38](https://user-images.githubusercontent.com/71403641/222272354-c40b5b01-93cc-4be7-b681-aa5ddb5f116d.png)
+![Screenshot from 2023-02-27 16-27-08](https://user-images.githubusercontent.com/71403641/222272356-31baac61-8058-4dd9-9048-5a1e32240cd2.png)
+![Screenshot from 2023-02-27 16-30-45](https://user-images.githubusercontent.com/71403641/222272362-c755daec-e809-4fcf-99b7-98b91ef7eb18.png)
+![Screenshot from 2023-02-27 17-03-54](https://user-images.githubusercontent.com/71403641/222272364-deee56eb-6213-4f16-8a96-cc1ea9635f1e.png)
+![Screenshot from 2023-02-27 17-04-08](https://user-images.githubusercontent.com/71403641/222272368-a06f7707-5601-4bca-9fc3-c22310675056.png)
+![Screenshot from 2023-02-27 17-07-27](https://user-images.githubusercontent.com/71403641/222272370-ad71493d-bf65-4ba7-af79-05d6d42ce139.png)
+![Screenshot from 2023-02-27 17-10-06](https://user-images.githubusercontent.com/71403641/222272373-a17bb355-be63-4040-bc92-6a1403733df6.png)
+![Screenshot from 2023-02-27 17-12-08](https://user-images.githubusercontent.com/71403641/222272377-b399edab-a63c-4f12-bb2c-22d27f6b75b6.png)
+![Screenshot from 2023-02-27 17-13-13](https://user-images.githubusercontent.com/71403641/222272379-514eba95-1bd1-4516-9888-c59daaffec68.png)
+![Screenshot from 2023-02-27 17-13-34](https://user-images.githubusercontent.com/71403641/222272381-022a4d79-7342-4263-987f-be884921b458.png)
+![Screenshot from 2023-03-01 22-40-46](https://user-images.githubusercontent.com/71403641/222272383-e150b2e0-d442-4837-ac4d-548bf1c54439.png)
+![Screenshot from 2023-03-01 22-44-12](https://user-images.githubusercontent.com/71403641/222272384-23e08ba8-3861-46f0-9956-bb62b2bc3429.png)
 
 
 ### Testing
