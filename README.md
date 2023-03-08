@@ -90,20 +90,24 @@ It is not important:
 #### Atomic design
 
 ### Folder structure used
-                   _di
-                 /
-            core --- domain --- model
-            /   \           \
-                             utils
-         /      \
-        /        infrastructure
-    src
-        \
-          \
-            ui
+               _di
+              /
+           core --- domain --- model
+          /   \           \
+         /     \           utils
+        /       \
+       /         infrastructure --- repositories
+    src                         \
+       \                         other files
+        \           components
+         \        /
+          \     / --- navigation
+           \   /
+              ui
+                \ --- styles
+                  \
+                  Screens
 
-
-![Screenshot from 2023-02-27 15-10-12](https://user-images.githubusercontent.com/71403641/221586687-3ba39dac-c2d5-4279-aa34-80b452abd21a.png)
 
 ![Screenshot from 2023-02-27 15-37-18](https://user-images.githubusercontent.com/71403641/221592650-9242c561-69a4-493d-aad2-65890e123a3d.png)
 
