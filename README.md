@@ -89,7 +89,19 @@ It is not important:
 
 #### Atomic design
 
-### Folder structure
+### Folder structure used
+                   _di
+                 /
+            core --- domain --- model
+            /   \           \
+                             utils
+         /      \
+        /        infrastructure
+    src
+        \
+          \
+            ui
+
 
 ![Screenshot from 2023-02-27 15-10-12](https://user-images.githubusercontent.com/71403641/221586687-3ba39dac-c2d5-4279-aa34-80b452abd21a.png)
 
