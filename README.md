@@ -98,15 +98,49 @@ It is not important:
         /       \
        /         infrastructure --- repositories
     src                         \
-       \                         other files
-        \           components
-         \        /
-          \     / --- navigation
-           \   /
-              ui
-                \ --- styles
-                  \
-                  Screens
+       \                         [other files]
+        \      components
+         \    /
+          \  / --- navigation
+           ui
+             \ --- styles
+              \
+               [screens]
+
+
+
+              _di
+             /
+          core --- domain
+         /   \
+        /     infrastructure
+       /
+    src
+       \      components
+        \    /
+         \  / --- navigation
+          ui
+            \ --- styles
+             \
+              [screens]
+
+
+
+             _di
+            /
+         core --- domain
+        /   \
+       /     infrastructure
+    src
+      \      components
+       \    /
+        \  / --- navigation
+         ui
+           \ --- styles
+            \
+             [screens]
+
+
 
 
 ![Screenshot from 2023-02-27 15-37-18](https://user-images.githubusercontent.com/71403641/221592650-9242c561-69a4-493d-aad2-65890e123a3d.png)
