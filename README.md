@@ -95,9 +95,7 @@ It is not important:
 
 ![Screenshot from 2023-02-27 15-37-18](https://user-images.githubusercontent.com/71403641/221592650-9242c561-69a4-493d-aad2-65890e123a3d.png)
 
-![Screenshot from 2023-02-27 15-39-06](https://user-images.githubusercontent.com/71403641/221593099-25884d35-c7ef-4cad-8374-cc9fd84e9fbd.png)
-
-![Screenshot from 2023-02-27 15-41-57](https://user-images.githubusercontent.com/71403641/221593899-68e6ede6-a798-41db-be1a-bc9460aa9206.png)
+![Screenshot from 2023-03-08 17-47-00](https://user-images.githubusercontent.com/71403641/223776434-bb1a5637-3ad7-4ece-a7b6-16bb813cb7fb.png)
 
 ![Screenshot from 2023-02-27 16-14-43](https://user-images.githubusercontent.com/71403641/222272341-a9a8c4aa-e448-4dd1-8c33-9f8760cf0ead.png)
 
