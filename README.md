@@ -83,11 +83,19 @@ It is not important:
 
 ### Architecture and design patterns
 
-#### Hexagonal architecture
+#### Clean/Hexagonal architecture
+
+We are implementing the concepts behind the clean architecture. I would love to say that we are implementing the Hexagonal architecture, but since there are no interfaces being used for dependency inversion I am going to skip it for now.
 
 #### MVC
 
+For our screens, we are implementing the MVC architecture.
+
 #### Atomic design
+
+For our components we are following the atomic design principles.
+
+SOLID principles are being applied throughout the whole application.
 
 ### Folder structure
 
