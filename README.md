@@ -89,7 +89,8 @@ It is not important:
 
 #### Atomic design
 
-### Folder structure used
+### Folder structure
+
                _di
               /
            core --- domain --- model
@@ -112,7 +113,7 @@ It is not important:
               _di
              /
           core --- domain
-         /   \
+         /   \                                  
         /     infrastructure
        /
     src
@@ -124,6 +125,46 @@ It is not important:
              \
               [screens]
 
+As you can see, the app is divided in two big sections:
+- core: Contains the business logic and anything that has nothing to do with how the app looks 
+- ui: Contains everything that is related with how the app looks.
+
+Core:
+
+        _di
+       /
+    core --- domain
+       \
+        infrastructure
+
+We are implementing the concepts behind clean architecture. Following DRY principles the service layer has been skipped.
+- di: Dependency injection. Stores everything related with the dependency injection we are using in the project
+- domain: Contains domain logic and models.
+- infrastructure: Calls external services and interacts with domain entities.
+
+UI:
+
+        components
+       /
+      / --- navigation
+    ui
+      \ --- styles
+       \
+        [screens]
+
+- components: Contains the components that are being reused by more than one screen. If a component is being used by only one screen it is stored inside of that screens folder. Notice that we are using atomic design principles for all the reusable components we create. Objects are components that are not visible by themselves but interact with the rest of the components to modify their display.
+
+                  _objects
+                 /
+                / --- atoms
+      components
+                \ --- molecules
+                 \
+                  organisms
+
+- navigation
+- styles
+- screens
 
 
 
