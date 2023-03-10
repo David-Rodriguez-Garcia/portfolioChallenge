@@ -30,9 +30,6 @@
         <li><a href="#architecture">Architecture and design patterns</a></li>
         <li><a href="#folder-structure">Folder structure</a></li>
         <li><a href="#testing">Testing</a></li>
-        <ul>
-          <li><a href="#dependency-injection">Dependency injection</a></li>
-        </ul>
         <li><a href="#libraries">Libraries</a></li>
         <li><a href="#github">Github</a></li>
         <li><a href="#issues">Issues</a></li>
@@ -160,7 +157,9 @@ UI:
        \
         [screens]
 
-- components: Contains the components that are being reused by more than one screen. If a component is being used by only one screen it is stored inside of that screens folder. Notice that we are using atomic design principles for all the reusable components we create. Objects are components that are not visible by themselves but interact with the rest of the components to modify their display.
+- components: Contains the components that are being used by more than one screen. If a component is being used by only one screen it is stored inside of that screens folder.
+
+Notice that we are using atomic design principles for all the reusable components we create. Objects are components that are not visible by themselves but interact with the rest of the components to modify how they are displayed.
 
                   _objects
                  /
@@ -170,9 +169,9 @@ UI:
                  \
                   organisms
 
-- navigation
-- styles
-- screens
+- navigation: Anything that has something to do with navigation (react-navigation) goes inside of this folder.
+- styles: Common utilities that are related to the styles
+- screens: The app screens. Since we are using the MVC pattern each folder has it's own Controller and View files. If needed, an extra file for the model can be added. If the screen has components that are not being reused by other screens, it will also have a custom components file with its corresponding tests (more on tests later).
 
 
 
@@ -196,15 +195,28 @@ UI:
 
 ### Testing
 
-#### Dependency Injection
+We are using Jest for testing and the app has been developed using TDD practices. A dependency injection library (awilix) is being used for better mocking. There is a test behind every screen, component or functionality that can be properly tested and there is a benefit in doing so.
 
 ### Libraries
+
+Main dependencies:
+- react-navigation
+- react-query
+- awilix
+- fast-xml-parser
+
+Main devDependencies:
+- testing-library
+- isomorphic-fetch
 
 ### Github
 
 ### Issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Setup
+### esLint
 
 <!-- GETTING STARTED -->
 ## Getting Started
