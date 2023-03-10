@@ -82,7 +82,7 @@ It is not important:
 
 #### Clean/Hexagonal architecture
 
-We are implementing the concepts behind the clean architecture. I would love to say that we are implementing the Hexagonal architecture, but since there are no interfaces being used for dependency inversion I am going to skip it for now.
+We are implementing the concepts behind the clean architecture. I would love to say that we are implementing the hexagonal architecture, but since there are no interfaces being used for dependency inversion I am going to skip it for now.
 
 #### MVC
 
