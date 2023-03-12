@@ -29,7 +29,6 @@
         <li><a href="#testing">Testing</a></li>
         <li><a href="#libraries">Libraries</a></li>
         <li><a href="#github">Github</a></li>
-        <li><a href="#issues">Issues</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -100,7 +99,7 @@ As you can see, the app is divided in two big sections:
 - core: Contains the business logic and anything that has nothing to do with how the app looks 
 - ui: Contains everything that is related with how the app looks.
 
-## Core:
+### Core:
 
         _di
        /
@@ -113,7 +112,7 @@ We are implementing the concepts behind clean architecture. Following DRY princi
 - domain: Contains domain logic and models.
 - infrastructure: Calls external services and interacts with domain entities.
 
-UI:
+### UI:
 
         components
        /
@@ -157,7 +156,11 @@ Main devDependencies:
 
 ## Github
 
-## Issues
+We look forward to use github in different ways:
+1- To organize the issues. We would discuss them with the team and assigning each one to the corresponding programmer.
+![Screenshot from 2023-03-12 18-49-47](https://user-images.githubusercontent.com/71403641/224562885-2c6b26b7-17a6-4ad3-84ef-e0afa6a95d03.png)
+2- For writing documentation. Having a documentation section with all the information needed by a team member throughout the application development helps the team have a reference point and the app to have a consistent structure. Consenses about naming, good practices, etc. would be noted here. It also allows the developer to find what he is looking for without the need of help from another team member.
+3- Having branch rules and configuration that makes the development of the app more secure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
