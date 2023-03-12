@@ -24,17 +24,12 @@
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
-    <li>
-      <a href="#key-points">Key points</a>  
-      <ul>
-        <li><a href="#architecture">Architecture and design patterns</a></li>
+        <li><a href="#architecture-and-design-patterns">Architecture and design patterns</a></li>
         <li><a href="#folder-structure">Folder structure</a></li>
         <li><a href="#testing">Testing</a></li>
         <li><a href="#libraries">Libraries</a></li>
         <li><a href="#github">Github</a></li>
         <li><a href="#issues">Issues</a></li>
-      </ul>
-    </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -76,44 +71,15 @@ It is not important:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Key points
 
-### Architecture and design patterns
+## Architecture and design patterns
 
-#### Clean/Hexagonal architecture
+- Clean/Hexagonal architecture
+- MVC: For our screens
+- Atomic design: For our components
+- SOLID principles: Applied troughout the whole application
 
-We are implementing the concepts behind the clean architecture. I would love to say that we are implementing the hexagonal architecture, but since there are no interfaces being used for dependency inversion I am going to skip it for now.
-
-#### MVC
-
-For our screens, we are implementing the MVC architecture.
-
-#### Atomic design
-
-For our components we are following the atomic design principles.
-
-SOLID principles are being applied throughout the whole application.
-
-### Folder structure
-
-               _di
-              /
-           core --- domain --- model
-          /   \           \
-         /     \           utils
-        /       \
-       /         infrastructure --- repositories
-    src                         \
-       \                         [other files]
-        \      components
-         \    /
-          \  / --- navigation
-           ui
-             \ --- styles
-              \
-               [screens]
-
-
+## Folder structure
 
               _di
              /
@@ -134,7 +100,7 @@ As you can see, the app is divided in two big sections:
 - core: Contains the business logic and anything that has nothing to do with how the app looks 
 - ui: Contains everything that is related with how the app looks.
 
-Core:
+## Core:
 
         _di
        /
@@ -173,31 +139,11 @@ Notice that we are using atomic design principles for all the reusable component
 - styles: Common utilities that are related to the styles
 - screens: The app screens. Since we are using the MVC pattern each folder has it's own Controller and View files. If needed, an extra file for the model can be added. If the screen has components that are not being reused by other screens, it will also have a custom components file with its corresponding tests (more on tests later).
 
-
-
-![Screenshot from 2023-02-27 15-37-18](https://user-images.githubusercontent.com/71403641/221592650-9242c561-69a4-493d-aad2-65890e123a3d.png)
-
-![Screenshot from 2023-03-08 17-47-00](https://user-images.githubusercontent.com/71403641/223776434-bb1a5637-3ad7-4ece-a7b6-16bb813cb7fb.png)
-
-![Screenshot from 2023-03-08 17-57-46](https://user-images.githubusercontent.com/71403641/223785145-212a0448-9887-4d1c-be50-ea660694c671.png)
-
-![Screenshot from 2023-03-08 18-00-04](https://user-images.githubusercontent.com/71403641/223786496-b3111ea3-4257-478e-84de-0dee5742bc17.png)
-
-![Screenshot from 2023-02-27 16-22-11](https://user-images.githubusercontent.com/71403641/222272350-57f33bab-29a1-49ab-ad96-a9412caec35a.png)
-
-![Screenshot from 2023-02-27 17-04-08](https://user-images.githubusercontent.com/71403641/222272368-a06f7707-5601-4bca-9fc3-c22310675056.png)
-![Screenshot from 2023-02-27 17-07-27](https://user-images.githubusercontent.com/71403641/222272370-ad71493d-bf65-4ba7-af79-05d6d42ce139.png)
-![Screenshot from 2023-02-27 17-10-06](https://user-images.githubusercontent.com/71403641/222272373-a17bb355-be63-4040-bc92-6a1403733df6.png)
-![Screenshot from 2023-02-27 17-12-08](https://user-images.githubusercontent.com/71403641/222272377-b399edab-a63c-4f12-bb2c-22d27f6b75b6.png)
-![Screenshot from 2023-03-01 22-40-46](https://user-images.githubusercontent.com/71403641/222272383-e150b2e0-d442-4837-ac4d-548bf1c54439.png)
-![Screenshot from 2023-03-01 22-44-12](https://user-images.githubusercontent.com/71403641/222272384-23e08ba8-3861-46f0-9956-bb62b2bc3429.png)
-
-
-### Testing
+## Testing
 
 We are using Jest for testing and the app has been developed using TDD practices. A dependency injection library (awilix) is being used for better mocking. There is a test behind every screen, component or functionality that can be properly tested and there is a benefit in doing so.
 
-### Libraries
+## Libraries
 
 Main dependencies:
 - react-navigation
@@ -209,9 +155,9 @@ Main devDependencies:
 - testing-library
 - isomorphic-fetch
 
-### Github
+## Github
 
-### Issues
+## Issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
