@@ -48,22 +48,22 @@
 The challenge consists of implementing a basic RSS client with the following features:
 - The main screen of the application will be a list of news items sorted by date.
 - Each row will contain the title, a description of no more than two lines and the image of the corresponding news item.
-- Selecting a row should open a screen with the detail of the news item.
-- The detail screen will contain the title, the complete description, the image of the news item and a "View in browser" button.
+- Selecting a row should open a screen with the details of the news item.
+- The detail screen will contain the title, complete description and image of the news item. It will also have a "View in browser" button that will take them to the article on the web.
 - In case of using third-party libraries, briefly justify the reason for each one.
 - The data source is free: any online dynamic xml or json feed.
-- A free repository must be created on Github (https://github.com/) or Bitbucket (https://bitbucket.org/) and a good use of the tool should be made for the development and evolution of the App code.
+- A free repository needs to be created on Github (https://github.com/) or Bitbucket (https://bitbucket.org/) and a good use of the tool must be made for the development and evolution of the application.
 
 Additional points will be given for:
-- Possibility of offline operation: the news should persist in the device so that if when starting the application there is no connectivity the last ones consulted are shown.
+- Possibility of offline operation: the news should persist on the device so that, if there is no connectivity when starting the application, the last viewed news are displayed.
 - Ability to search for news by title.
-- Brief description of the design patterns used and the reason behind their use.
+- Brief description of the design patterns used and the reason behind their implementation.
 - Add app icons.
 - Testing components.
 
 It will be especially valued:
 - Code correctness: organization of methods and classes, reuse of components, architecture, dependencies, possibility of future scaling.
-- Comments and maintainability of the code.
+- Comments and code maintenance.
 
 It is not important:
 - The graphical aspect of the app.
@@ -108,9 +108,9 @@ As you can see, the app is divided in two big sections:
         infrastructure
 
 We are implementing the concepts behind clean architecture. Following DRY principles the service layer has been skipped.
-- di: Dependency injection. Stores everything related with the dependency injection we are using in the project
+- di: Contains everything related to the dependency injection we are implementing in the application
 - domain: Contains domain logic and models.
-- infrastructure: Calls external services and interacts with domain entities.
+- infrastructure: Calls external services and interacts with domain logic and models.
 
 ### UI:
 
