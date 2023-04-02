@@ -134,11 +134,12 @@ Note that we apply atomic design principles to any reusable component we create.
                  \
                   organisms
 
-- navigation: Anything that has something to do with navigation (react-navigation) goes inside of this folder.
-- styles: Common utilities that are related to the styles
-- screens: The app screens. Since we are using the MVC pattern each folder has it's own Controller and View files. If needed, an extra file for the model can be added. If the screen has components that are not being reused by other screens, it will also have a custom components file with its corresponding tests (more on tests later).
+- navigation: Stores anything related to navigation (react-navigation).
+- styles: Stores style-related utilities.
+- screens: Contains the screens of the application. Since we are using the MVC pattern, each screen's folder has its own Controller and View files, and if needed, a Model file. As mentioned above, if the screen contains components that are not being used by other screens, a custom `components` folder will be created for them.
 
 ## Testing
+###Leer duda en screens -> A partir de As mentioned above... [...] <<will o would?>> ¿por ejemplo?
 
 We are using Jest for testing and the app has been developed using TDD practices. A dependency injection library (awilix) is being used for better mocking. There is a test behind every screen, component or functionality that can be properly tested and there is a benefit in doing so.
 
