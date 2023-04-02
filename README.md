@@ -122,9 +122,9 @@ We are implementing the concepts behind clean architecture. Following DRY princi
        \
         [screens]
 
-- components: Contains the components that are being used by more than one screen. If a component is being used by only one screen it is stored inside of that screens folder.
+- components: Contains the components that are being used by more than one screen. If a component is only used by one screen, it is stored in that screen's folder.
 
-Notice that we are using atomic design principles for all the reusable components we create. Objects are components that are not visible by themselves but interact with the rest of the components to modify how they are displayed.
+Note that we apply atomic design principles to any reusable component we create. Objects are components that are not displayed, whose sole purpose is to help organise the other components.
 
                   _objects
                  /
