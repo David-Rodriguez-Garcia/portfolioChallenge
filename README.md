@@ -28,7 +28,6 @@
     <li><a href="#folder-structure">Folder structure</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#libraries">Libraries</a></li>
-
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
